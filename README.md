@@ -36,11 +36,16 @@ Tests are modelled as a JSON file with the following fields.
 ```
 
 ## CLI usage
-```bash
+```bash#
 prolog_tester tests/ prolog_file.pl
 ```
 
 ## API usage
-```python:api_example.py
+```python
+# api_example.py
+ptc = PrologTestClass()
+ptc.add_from_file('examples/sublist_1.json')
+ptc.run_all_tests(f'examples/sublits.pl', verbose=True)
 
+print(ptc.get_results())
 ```
