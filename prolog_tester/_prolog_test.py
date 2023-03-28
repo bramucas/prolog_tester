@@ -62,7 +62,6 @@ class ContainsTest(PredicateTest):
         return True
     
 class MatchTest(PredicateTest):
-    #TODO: fix this
     def _check_result(self, result):
         _expected_result, _result = self.expected_result.copy(), result.copy()
         while _expected_result and _result:
@@ -71,4 +70,4 @@ class MatchTest(PredicateTest):
                 _result.remove(element)
             except ValueError:
                 return False
-        return not _expected_result and not result  # Both must be empty
+        return not _expected_result and not _result  # Both must be empty
