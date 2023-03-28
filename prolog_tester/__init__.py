@@ -1,0 +1,1 @@
+from ._prolog_test import PrologTestClass
