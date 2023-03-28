@@ -41,10 +41,6 @@ prolog_tester tests/ prolog_file.pl
 ```
 
 ## API usage
-```python
-ptc = PrologTestClass()
-ptc.add_from_file('examples/sublist_1.json')
-ptc.run_all_tests(f'examples/sublits.pl', verbose=True)
+```python:api_example.py
 
-print(ptc.get_results())
 ```
